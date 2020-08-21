@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //document.write = imprime en pantalla
+
+        var friends=[ "Carlos","Oscar","🐈 trigo"];
+        
+        //imprimir posición 0
+        document.write(friends[0]);
+
+        //imprimir cuantos amigos tienes
+        document.write("<br> tienes : "+friends.length + "amigos");
+        
+        //agregar otro
+        friends[friends.length]="otro gato";
+        
+        //otra forma de hacer lo mismo 
+        friends.push("🐱 gatoPardo");
+        
+        //eliminar el ultimo
+        friends.pop();
+
+        document.write(friends[0]);
+
+
+
+        //***** CONCATENAR *****//
+        let pet=["🐶dog","🐱cat"];
+        let food=["🍔burguer", "🍕pizza"];
+
+        let pet_food= pet.concat(food);
+        document.write("<br> mascotas y comida: "+ pet_food);
+
+    </script>
+    
+</body>
+</html>
